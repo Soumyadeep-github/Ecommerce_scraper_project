@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='stylesheet.css') }}">
+<title>Reviews</title>
+{% endblock title %}
+
+
+{% block e %}
+         <li class="nav-item active"><a class="nav-link text-white" href="{{ download_csv_a }}">Download Amazon Data</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="{{ download_csv_f }}">Download Flipkart Data</a></li>
+{%endblock e%}        
+        
+
+{% block body %}
+<div class="container-edit"> 
+        <div class='box-1'>
+                <table class="content-table" >
+                        <h1>Flipkart</h1>
+                        {% for table in tables_flip %}
+                                <h3>{{ table | safe }}</h3>
+                        {% endfor %}
+                </table>
+        </div>      
+        <div class='box-2'>
+                <table class="content-table-n" >
+                        <h1>Amazon</h1>
+                        {% for table in tables_amaz %}
+                                <h3>{{ table | safe }}</h3>
+                        {% endfor %}
+                </table>
+        </div>
+</div>
+{% endblock body %}
