@@ -8,6 +8,7 @@ Reviews can be confusing too, one product has 5 stars with only 10 reviews where
 
 This application can do them both. Show listings from Amazon and Flipkart side by side and show a word cloud representation of the reviews.
 
-![](images/scraper_homepage.png)
-![](images/scraper_scrapedData.png)
-![](images/scraper_wordclouds.png)
+
+<img src="images/scraper_scrapedData.png">
+
+<img src="images/scraper_wordclouds.png">
